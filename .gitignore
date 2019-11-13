@@ -7,4 +7,4 @@ yarn-error.log*
 lib
 types
 lib_test
-./configs/github.strategy*
+configs/github.strategy.js
