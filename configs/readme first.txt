@@ -1,2 +1,2 @@
-to Work is important change __default of config files.
+to Work is important remove "__default" of config files.
 eg: github.strategy__default.js will become github.strategy.js
