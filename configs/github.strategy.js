@@ -1,11 +1,12 @@
 const passport = require("passport");
 const GitHubStrategy = require("passport-github").Strategy;
+const env = require("../env")
 
 passport.use(
     new GitHubStrategy({
-            clientID: "GITHUB_CLIENT_ID",
-            clientSecret: "GITHUB_CLIENT_SECRET",
-            callbackURL: "http://localhost:3000/auth/github/callback"
+            clientID: env.git_api_clientID,
+            clientSecret: env.git_api_clientSecret,
+            callbackURL: env.git_api_callbackURL
         },
         function(accessToken, refreshToken, profile, done) {
             return done(undefined, profile);

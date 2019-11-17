@@ -11,6 +11,7 @@ const loginRouter = require('./routes/login');
 const logoutRouter = require('./routes/logout');
 
 const app = express();
+require('./env');
 require('./configs/github.strategy');
 
 // view engine setup
